@@ -164,6 +164,9 @@
                         <th>NullPointerException</th>
                         <th>SchedulerException</th>
                         <th>SuperCsvException</th>
+                        <th>ERROR</th>
+                        <th>INFO</th>
+                        <th>DEBUG</th>
                     </tr>
                 </thead>
                 <tbody id="log-entries">
@@ -181,6 +184,9 @@
                             <td th:text="${entry.nullPointerExceptionCount}"></td>
                             <td th:text="${entry.schedulerExceptionCount}"></td>
                             <td th:text="${entry.superCsvExceptionCount}"></td>
+                            <td th:text="${entry.errorCount}"></td>
+                            <td th:text="${entry.infoCount}"></td> 
+                            <td th:text="${entry.debugCount}"></td>
                         </tr>
                     </th:block>
                 </tbody>
@@ -236,6 +242,10 @@
                 <td>${entry.nullPointerExceptionCount}</td>
                 <td>${entry.schedulerExceptionCount}</td>
                 <td>${entry.superCsvExceptionCount}</td>
+                <td>${entry.errorCount}></td>
+                <td${entry.infoCount}></td> 
+                <td${entry.debugCount}></td>
+                
             `;
             logEntriesContainer.appendChild(row);
         });
