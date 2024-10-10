@@ -24,9 +24,10 @@ public class StatisticsFinal {
     private int nullPointerExceptionCount;
     private int schedulerExceptionCount;
     private int superCsvExceptionCount;
-    private int ERRORCount;
-    private int INFOCount;
-    private int DEBUGCount;
+    private int errorCount;
+    private int infoCount;  
+    private int debugCount; 
+
     
     // Default constructor
     public StatisticsFinal() {}
@@ -153,27 +154,31 @@ public class StatisticsFinal {
     public void setSuperCsvExceptionCount(int superCsvExceptionCount) {
         this.superCsvExceptionCount = superCsvExceptionCount;
     }
-    public int getERRORCount() {
-        return ERRORCount;
+    public int getErrorCount() {
+        return errorCount;
     }
 
-    public void setERRORCount(int ERRORCount) {
-        this.ERRORCount = ERRORCount;
-    }
-    public int getINFOCount() {
-        return INFOCount;
+    public void setErrorCount(int errorCount) {
+        this.errorCount = errorCount;
     }
 
-    public void setINFOCount(int INFOCount) {
-        this.INFOCount =INFOCount;
-    }
-    public int getDEBUGCount() {
-        return DEBUGCount;
+    public int getInfoCount() {
+        return infoCount;
     }
 
-    public void setDEBUGCount(int DEBUGCount) {
-        this.DEBUGCount =DEBUGCount;
+    public void setInfoCount(int infoCount) {
+        this.infoCount = infoCount;
     }
+
+    public int getDebugCount() {
+        return debugCount;
+    }
+
+    public void setDebugCount(int debugCount) {
+        this.debugCount = debugCount;
+    }
+    
+    
 
     @Override
     public String toString() {
@@ -192,9 +197,9 @@ public class StatisticsFinal {
                 ", nullPointerExceptionCount=" + nullPointerExceptionCount +
                 ", schedulerExceptionCount=" + schedulerExceptionCount +
                 ", superCsvExceptionCount=" + superCsvExceptionCount +
-                ", ERRORCount=" + ERRORCount +
-                ", INFOCount=" + INFOCount +
-                ", DEBUGCount=" + DEBUGCount +
+                ", errorCount=" + errorCount +
+                ", infoCount=" + infoCount +
+                ", debugCount=" + debugCount +
                 '}';
     }
 }
