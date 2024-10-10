@@ -34,9 +34,9 @@ public class StatisticsFinalService {
         stats.setNullPointerExceptionCount(nullPointerExceptionCount);
         stats.setSchedulerExceptionCount(schedulerExceptionCount);
         stats.setSuperCsvExceptionCount(superCsvExceptionCount);
-        stats.setERRORCount(ERRORCount);
-        stats.setINFOCount(INFOCount);
-        stats.setDEBUGCount(DEBUGCount);
+        stats.setErrorCount(ERRORCount);
+        stats.setInfoCount(INFOCount);
+        stats.setDebugCount(DEBUGCount);
         statisticsFinalRepository.save(stats);
     }
 
